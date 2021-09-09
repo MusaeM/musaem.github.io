@@ -48,7 +48,7 @@ ol, ul {
 		text-decoration: none;
 	}
 
-	.homebutton {
+	.homebutton a {
 		color: inherit;
 		outline: 0;
 		text-decoration: none;
