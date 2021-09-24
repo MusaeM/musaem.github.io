@@ -99,7 +99,7 @@
   display: flex;
   align-content: space-around;
 
-  background-color: #fff;
+  background-color: #a4e7d9;
   padding: 0px 10px 0px 10px;
   -webkit-animation: header 1s 2.25s forwards;
   cursor: default;
@@ -216,11 +216,17 @@ margin-bottom: -70px;
     width: 110%;
   }
 
+  .logo {
+    margin-top: 0px;
+    margin-bottom: -350px;
+  }
+
   .content {
     width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 0px;
+    margin-top: 60%;
 
   }
 
@@ -262,10 +268,16 @@ margin-bottom: -70px;
     width: 120%;
   }
 
+  .logo {
+    margin-top: 0px;
+    margin-bottom: -350px;
+  }
+
 .content {
   flex-direction: column;
   width: 100%;
   padding: 0px;
+  margin-top: 60%;
 }
 
 .item {
