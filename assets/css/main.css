@@ -61,7 +61,6 @@ ol, ul {
 
 /* Icon */
 
-
 		.icon:before {
 			display: inline-block;
 			font-style: normal;
@@ -81,6 +80,21 @@ ol, ul {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+
+/* BG */
+
+	#bg {
+	/*	-webkit-animation: bg 60s linear infinite;
+	/* Set your background with this */
+
+		//background: #34b3a3 /*url("images/bg.jpg")*/ bottom left;
+		background-repeat: repeat-x;
+		height: 100%;
+		left: 0;
+		opacity: 1;
+		position: fixed;
+		top: 0;
+	}
 
 /* Main */
 
@@ -187,8 +201,7 @@ ol, ul {
 				#header nav a span {
 					display: none;
 				}
-
-
+				
 /* Wide */
 
 	@media screen and (max-width: 2680px) {
