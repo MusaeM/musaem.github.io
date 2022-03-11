@@ -1,315 +1,109 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,800");
 @import url("fontawesome-all.min.css");
 
-
-html, body, div, span, h1, p, a, ol, ul, li, footer, header, menu, nav {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-footer, header, menu, nav {
-	display: block;}
-
 body {
-	line-height: 1;
+	background-color: #34b3a3;
+	height: 550px;
+	font-family: 'Nunito', sans-serif;
 }
 
-ol, ul {
-	list-style: none;
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
 }
 
-/* Basic */
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-	html {
-		box-sizing: border-box;
-	}
+}
 
-	body {
-		background: #fff;
-		overflow: hidden;
-	}
-
-	body {
-		color: #fff;
-		font-family: 'Nunito', sans-serif;
-		font-size: 15pt;
-		font-weight: 300 !important;
-		letter-spacing: -0.025em;
-		line-height: 1.75em;
-	}
-
-	a {
-		color: inherit;
-		outline: 0;
-		text-decoration: none;
-	}
-
-	.homebutton a {
-		color: inherit;
-		outline: 0;
-		text-decoration: none;
-		border-color: transparent;
-	}
-
-		a:hover {
-			border-color: transparent;
-		}
-
-/* Icon */
-
-		.icon:before {
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
+.link-group {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 2%;
+}
 
 
-/* BG */
+a {
+	color: white;
+}
 
-	#bg {
-	/*	-webkit-animation: bg 60s linear infinite;
-	/* Set your background with this */
+.header a:hover{
+	text-shadow: 2px 2px black;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
 
-		//background: #34b3a3 /*url("images/bg.jpg")*/ bottom left;
-		background-repeat: repeat-x;
-		height: 100%;
-		left: 0;
-		opacity: 1;
-		position: fixed;
-		top: 0;
-	}
+.link-group i:hover {
+	text-shadow: 2px 2px black;
+	transform: rotate(360deg);
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+}
 
-/* Main */
 
-	#main {
-		height: 100%;
-		left: 0;
-		position: fixed;
-		text-align: center;
-		top: 0;
-		width: 100%;
-	}
+h1 a {
+	font-size: 4.35em;
+	font-weight: 900;
+	letter-spacing: -0.035em;
+	line-height: 1em;
+	text-decoration: none;
+}
 
-		#main:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			margin-right: 0;
-			vertical-align: middle;
-			width: 1px;
-		}
+h1 a:hover {
+}
 
-	#header {
-		-webkit-animation: header 1s 2.25s forwards;
-		cursor: default;
-		display: inline-block;
-		opacity: 0;
-		position: relative;
-		text-align: center;
-		top: -1em;
-		vertical-align: middle;
-		width: 90%;
-	}
-
-		#header h1 {
-			font-size: 4.35em;
-			font-weight: 900;
-			letter-spacing: -0.035em;
-			line-height: 1em;
-		}
-
-		#header p {
-			font-size: 1.25em;
-			margin: 0.75em 0 0.25em 0;
-			opacity: 0.75;
-		}
-
-		#header nav {
-			margin: 1.5em 0 0 0;
-		}
-
-			#header nav li {
-				-webkit-animation: nav-icons 0.5s ease-in-out forwards;
-				display: inline-block;
-				height: 5.35em;
-				line-height: 5.885em;
-				opacity: 0;
-				position: relative;
-				top: 0;
-				width: 5.35em;
-			}
+.desc-p {
+	font-size: 2em;
+	margin: 0.75em 0 0.25em 0;
+	color: white;
+	margin-top: -6%;
+}
 
 
 
-			#header nav a {
-				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-				-webkit-touch-callout: none;
-				border: 0;
-				display: inline-block;
-			}
-
-				#header nav a:before {
-					-webkit-transition: all 0.2s ease-in-out;
-					border-radius: 100%;
-					border: solid 1px #fff;
-					display: block;
-					font-size: 1.75em;
-					height: 2.5em;
-					line-height: 2.5em;
-					position: relative;
-					text-align: center;
-					top: 0;
-					width: 2.5em;
-				}
-
-				#header nav a:hover {
-					font-size: 1.1em;
-				}
-
-					#header nav a:hover:before {
-						background-color: rgba(255, 255, 255, 0.175);
-						color: #fff;
-					}
-
-				#header nav a:active {
-					font-size: 0.95em;
-					background: none;
-				}
-
-					#header nav a:active:before {
-						background-color: rgba(255, 255, 255, 0.35);
-						color: #fff;
-					}
-
-				#header nav a span {
-					display: none;
-				}
-
-/* Wide */
-
-	@media screen and (max-width: 2680px) {
-
-		/* BG */
-
-		@-webkit-keyframes bg {
-			0% {
-				-webkit-transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-webkit-transform: translate3d(-1500px,0,0);
-			}
-			}
-
-		#bg {
-			background-size: 1500px auto;
-			width: 4500px;
-		} }
-
-/* Normal */
-
-	@media screen and (max-width: 1280px) {
-
-		/* BG */
-
-		@-webkit-keyframes bg {
-			0% {
-				-webkit-transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-webkit-transform: translate3d(-750px,0,0);
-			}
-			}
-
-		#bg {
-			background-size: 750px auto;
-			width: 2250px;
-		} }
 
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
 
-		/* BG */
-
-		@-webkit-keyframes bg {
-			0% {
-				-webkit-transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-webkit-transform: translate3d(-300px,0,0);
-			}
-			}
-
-		#bg {
+		body {
 			background-size: 300px auto;
-			width: 900px;
+			max-width: 736px;
 		}
 
-	/* Header */
-
-		#header h1 {
-			font-size: 2.5em;
+		.content {
+			width: 100%;
+			display: flex;
+			justify-content: center;
 		}
 
-		#header p {
-			font-size: 1em;
+		h1 a {
+			font-size: 2em;
+			font-weight: 900;
+			letter-spacing: -0.035em;
+			line-height: 1em;
+			text-decoration: none;
 		}
 
-		#header nav {
-			font-size: 1em;
+		.desc-p p {
+			width: 320px;
+			display: flex;
+			text-align: center;
 		}
 
-			#header nav a:hover {
-				font-size: 1em;
-			}
-
-			#header nav a:active {
-				font-size: 1em;
-			} }
-
-/* Mobile (Portrait) */
-
-	@media screen and (max-width: 480px) {
-
-		/* BG */
-
-		@-webkit-keyframes bg {
-			0% {
-				-webkit-transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-webkit-transform: translate3d(-412.5px,0,0);
-			}
-			}
-
-		#bg {
-			background-size: 412.5px auto;
-			width: 1237.5px;
+		.link-group {
+			display: flex;
+			justify-content: space-between;
 		}
 
-	/* Header */
 
-		#header nav {
-			padding: 0 1em;
-		} }
+	}
+
